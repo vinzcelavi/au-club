@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #00272B;
+  --foreground: #038C8C;
+  --primary-darker: #00272B;
+  --font-poppins: "Poppins", sans-serif;
+  --font-instrument-serif: "Instrument Serif", serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary-darker: var(--primary-darker);
+  --animate-background-gradient: background-gradient;
+
+  @keyframes background-gradient {
+    0%, 100% {
+      transform: translate(0, 0);
+      animationDelay: var(--background-gradient-delay, 0s);
+    }
+    20% {
+      transform: translate(calc(100% * var(--tx-1, 1)), calc(100% * var(--ty-1, 1)));
+    }
+    40% {
+      transform: translate(calc(100% * var(--tx-2, -1)), calc(100% * var(--ty-2, 1)));
+    }
+    60% {
+      transform: translate(calc(100% * var(--tx-3, 1)), calc(100% * var(--ty-3, -1)));
+    }
+    80% {
+      transform: translate(calc(100% * var(--tx-4, -1)), calc(100% * var(--ty-4, -1)));
+    }      
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins);
+  min-height: 100vh;
+  background-image: url('/pattern-bg-min.png');
+  background-size: 1200px auto;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: var(--background);
+  background-attachment: fixed;
+}
