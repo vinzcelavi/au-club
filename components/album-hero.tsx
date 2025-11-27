@@ -24,13 +24,13 @@ const AlbumHero: React.FC = () => {
           // Positioning
           'absolute top-0 left-0',
           // Sizing
-          'max-h-[50vh]',
+          'max-h-[40dvh] md:max-h-[50dvh]',
           // Flexbox
           'flex items-center justify-center',
           // Padding
-          'p-6 md:p-24'
+          'p-6 md:p-24',
           // Border
-          // 'border-2 border-red-500'
+          'border-2 border-red-500'
         )}
       >
         {squashImages.map((url, index) => {
@@ -79,9 +79,9 @@ const AlbumHero: React.FC = () => {
           // Padding
           'px-6 md:px-0 pt-[20dvh]',
           // Text
-          'text-center'
+          'text-center',
           // Border
-          // 'border-2 border-blue-500'
+          'border-2 border-blue-500'
         )}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
