@@ -28,7 +28,7 @@ const AlbumHero: React.FC = () => {
           // Flexbox
           'flex items-center justify-center',
           // Padding
-          'p-6 md:p-24',
+          'md:p-24',
           // Border
           'border-2 border-red-500'
         )}
