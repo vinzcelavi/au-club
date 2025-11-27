@@ -49,7 +49,8 @@ const DragElements: React.FC<DragElementsProps> = ({
     <div ref={constraintsRef} className={`relative w-full h-full ${className}`}>
       {React.Children.map(children, (child, index) => (
         <motion.div
-          key={index.toString() + Date.now()}
+          // biome-ignore lint/suspicious/noArrayIndexKey: <we need a stable key for the children>
+          key={index}
           drag
           dragElastic={dragElastic}
           dragConstraints={dragConstraints || constraintsRef}

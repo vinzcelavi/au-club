@@ -32,7 +32,8 @@ const GoogleReviewsSection = () => {
         {/* Stars */}
         <div className="flex justify-center gap-0.5 mt-1">
           {[...Array(5)].map((_, index) => (
-            <Star key={`star-${index}-${Date.now()}`} className="w-5 h-5 text-amber-400" />
+            // biome-ignore lint/suspicious/noArrayIndexKey: <we need a stable key for the children>
+            <Star key={index} className="w-5 h-5 text-amber-400" />
           ))}
         </div>
 

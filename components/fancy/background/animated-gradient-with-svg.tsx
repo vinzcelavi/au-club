@@ -88,7 +88,8 @@ const AnimatedGradient: React.FC<AnimatedGradientProps> = ({ colors, speed = 5, 
 
             return (
               <svg
-                key={`animated-gradient-${index.toString() + Date.now()}`}
+                // biome-ignore lint/suspicious/noArrayIndexKey: <we need a stable key for the children>
+                key={index}
                 className={cn('absolute', 'animate-background-gradient')}
                 width={circleSize * config.width}
                 height={circleSize * config.height}

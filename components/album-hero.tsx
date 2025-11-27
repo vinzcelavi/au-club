@@ -40,7 +40,8 @@ const AlbumHero: React.FC = () => {
 
           return (
             <div
-              key={index.toString() + Date.now()}
+              // biome-ignore lint/suspicious/noArrayIndexKey: <we need a stable key for the children>
+              key={index}
               className={cn(
                 // Flexbox
                 'flex items-start justify-center',
@@ -88,7 +89,7 @@ const AlbumHero: React.FC = () => {
         transition={{ duration: 0.88, delay: 0.25 }}
       >
         <HeroSection />
-      </motion.div>{' '}
+      </motion.div>
     </div>
   );
 };
