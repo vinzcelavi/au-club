@@ -39,7 +39,7 @@ const GoogleReviewsSection = () => {
 
         <div className="flex items-center justify-center gap-2">
           <span className="text-white text-xs font-medium">
-            Note de <strong>4.9</strong> sur <strong>74</strong> avis
+            Note de <strong>4.9</strong> sur <strong>75</strong> avis
           </span>
         </div>
       </a>

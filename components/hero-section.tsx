@@ -13,7 +13,10 @@ const HeroSection = () => {
         <br />
         moments inoubliables
         <br />
-        <span className="italic font-normal tracking-tight" style={{ fontFamily: 'var(--font-instrument-serif)' }}>
+        <span
+          className="italic font-normal tracking-tight text-cream"
+          style={{ fontFamily: 'var(--font-instrument-serif)' }}
+        >
           <FlipWords words={FLIP_WORDS} /> <br />
         </span>
       </h1>

@@ -8,6 +8,7 @@
   --background: #00272B;
   --foreground: #038C8C;
   --primary-darker: #00272B;
+  --cream: #EBD9C8;
   --font-poppins: "Poppins", sans-serif;
   --font-instrument-serif: "Instrument Serif", serif;
 }
@@ -16,6 +17,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary-darker: var(--primary-darker);
+  --color-cream: var(--cream);
   --animate-background-gradient: background-gradient;
 
   @keyframes background-gradient {
