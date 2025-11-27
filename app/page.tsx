@@ -4,7 +4,7 @@ import { Header } from '@/components/header';
 
 const HomePage = () => {
   return (
-    <div className="h-screen">
+    <div className="h-dvh">
       <AnimationGradient />
 
       {/* Header */}
@@ -12,12 +12,7 @@ const HomePage = () => {
 
       {/* Main Content */}
       <main className="relative z-10">
-        {/* Hero Section */}
-        <section className="h-screen flex items-center justify-center">
-          {/* <ParallaxFloatingHero /> */}
-
-          <AlbumHero />
-        </section>
+        <AlbumHero />
       </main>
 
       <div className="fixed bottom-4 left-4 right-4 text-center text-white/60 text-xs font-medium">

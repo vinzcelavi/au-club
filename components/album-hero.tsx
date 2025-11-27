@@ -73,7 +73,7 @@ const AlbumHero: React.FC = () => {
           // Positioning
           'z-10 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2',
           // Flexbox
-          'flex flex-col items-center justify-center gap-6',
+          'flex flex-col items-center justify-center gap-4 md:gap-6',
           // Sizing/Containers
           'max-w-2xl w-full h-auto mx-auto',
           // Padding

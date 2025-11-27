@@ -21,7 +21,9 @@ const HeroSection = () => {
       <p className="text-sm md:text-base text-white/70 max-w-md mx-auto font-normal leading-relaxed">
         On vous attend dans votre club préféré à <strong>Baillargues</strong> !
         <br />
-        Notre site se refait une beauté mais vous pouvez toujours réserver votre court en ligne.
+        <span className="hidden md:block">
+          Notre site se refait une beauté mais vous pouvez toujours réserver votre court en ligne.
+        </span>
       </p>
       <a
         href="http://auclub.onmss.com/"
