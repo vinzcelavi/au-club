@@ -35,6 +35,11 @@ const nextConfig: NextConfig = {
         source: '/le-squash-aux-jeux-olympiques-2028/',
         destination: '/',
         permanent: true
+      },
+      {
+        source: '/lhymne-du-club-a-la-une-du-site-de-la-fede/',
+        destination: '/',
+        permanent: true
       }
     ];
   }
