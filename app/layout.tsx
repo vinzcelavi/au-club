@@ -17,7 +17,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: 'Au Club - Squash Bar Food',
+  title: 'Au Club | Squash - Bar - Food',
   description:
     'Venez vivre des moments inoubliables en jouant au Squash chez Au Club à Baillargues. Réservez votre court dès maintenant.',
   keywords: ['squash', 'Baillargues', 'sport', 'Au Club', 'réservation court', 'food', 'bar', 'restaurant', 'pétanque'],
@@ -35,6 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Au Club" />
+      </head>
       <body className={`${poppins.variable} ${instrumentSerif.variable} antialiased`}>{children}</body>
     </html>
   );
