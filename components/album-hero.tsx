@@ -28,9 +28,9 @@ const AlbumHero: React.FC = () => {
           // Flexbox
           'flex items-center justify-center',
           // Padding
-          'md:p-24',
-          // Border
-          'border-2 border-red-500'
+          'md:p-24'
+          // Debug
+          // 'border-2 border-red-500'
         )}
       >
         {squashImages.map((url, index) => {
@@ -79,9 +79,9 @@ const AlbumHero: React.FC = () => {
           // Padding
           'px-6 md:px-0 pt-[22dvh]',
           // Text
-          'text-center',
-          // Border
-          'border-2 border-blue-500'
+          'text-center'
+          // Debug
+          // 'border-2 border-blue-500'
         )}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
