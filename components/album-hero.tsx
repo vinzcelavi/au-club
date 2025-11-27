@@ -24,7 +24,7 @@ const AlbumHero: React.FC = () => {
           // Positioning
           'absolute top-0 left-0',
           // Sizing
-          'max-h-[40dvh] md:max-h-[50dvh]',
+          'max-h-[50dvh]',
           // Flexbox
           'flex items-center justify-center',
           // Padding
@@ -77,7 +77,7 @@ const AlbumHero: React.FC = () => {
           // Sizing/Containers
           'max-w-2xl w-full h-auto mx-auto',
           // Padding
-          'px-6 md:px-0 pt-[20dvh]',
+          'px-6 md:px-0 pt-[22dvh]',
           // Text
           'text-center',
           // Border
