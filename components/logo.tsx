@@ -2,6 +2,7 @@
 
 const Logo = () => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <no need to add a title>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="120"

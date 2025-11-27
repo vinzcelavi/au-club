@@ -1,6 +1,6 @@
 'use client';
-import { useCallback, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
+import { useCallback, useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 export const FlipWords = ({
@@ -57,12 +57,13 @@ export const FlipWords = ({
           scale: 2,
           position: 'absolute'
         }}
-        className={cn('z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2', className)}
+        className={cn('z-10 inline-block relative text-left px-2', className)}
         key={currentWord}
       >
         {/* edit suggested by Sajal: https://x.com/DewanganSajal */}
         {currentWord.split(' ').map((word, wordIndex) => (
           <motion.span
+            // biome-ignore lint/suspicious/noArrayIndexKey: <we need a stable key for the children>
             key={word + wordIndex}
             initial={{ opacity: 0, y: 10, filter: 'blur(8px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -74,6 +75,7 @@ export const FlipWords = ({
           >
             {word.split('').map((letter, letterIndex) => (
               <motion.span
+                // biome-ignore lint/suspicious/noArrayIndexKey: <we need a stable key for the children>
                 key={word + letterIndex}
                 initial={{ opacity: 0, y: 10, filter: 'blur(8px)' }}
                 animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}

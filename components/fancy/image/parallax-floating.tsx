@@ -1,10 +1,9 @@
 'use client';
 
-import { createContext, ReactNode, useCallback, useContext, useEffect, useRef } from 'react';
 import { useAnimationFrame } from 'motion/react';
-
-import { cn } from '@/lib/utils';
+import { createContext, type ReactNode, useCallback, useContext, useEffect, useRef } from 'react';
 import { useMousePositionRef } from '@/hooks/use-mouse-position-ref';
+import { cn } from '@/lib/utils';
 
 interface FloatingContextType {
   registerElement: (id: string, element: HTMLDivElement, depth: number) => void;
@@ -95,9 +94,11 @@ export const FloatingElement = ({ children, className, depth = 1 }: FloatingElem
 
     const nonNullDepth = depth ?? 0.01;
 
-    context.registerElement(idRef.current, elementRef.current, nonNullDepth);
-    return () => context.unregisterElement(idRef.current);
-  }, [depth]);
+    if (context) {
+      context.registerElement(idRef.current, elementRef.current, nonNullDepth);
+      return () => context.unregisterElement(idRef.current);
+    }
+  }, [depth, context]);
 
   return (
     <div ref={elementRef} className={cn('absolute will-change-transform', className)}>

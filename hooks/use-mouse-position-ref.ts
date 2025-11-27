@@ -1,11 +1,11 @@
-import { RefObject, useEffect, useRef } from 'react';
+import { type RefObject, useEffect, useRef } from 'react';
 
 export const useMousePositionRef = (containerRef?: RefObject<HTMLElement | SVGElement | null>) => {
   const positionRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const updatePosition = (x: number, y: number) => {
-      if (containerRef && containerRef.current) {
+      if (containerRef?.current) {
         const rect = containerRef.current.getBoundingClientRect();
         const relativeX = x - rect.left;
         const relativeY = y - rect.top;
