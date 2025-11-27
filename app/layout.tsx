@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Instrument_Serif, Poppins } from 'next/font/google';
-import './globals.css';
+import '@/app/globals.css';
+import Script from 'next/script';
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700', '800'],
@@ -37,6 +38,14 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <meta name="apple-mobile-web-app-title" content="Au Club" />
+        {/* Load Seline only in production or when token is configured */}
+        {process.env.NEXT_PUBLIC_SELINE_TOKEN && process.env.NODE_ENV === 'production' && (
+          <Script
+            src="https://cdn.seline.com/seline.js"
+            strategy="afterInteractive"
+            data-token={process.env.NEXT_PUBLIC_SELINE_TOKEN}
+          />
+        )}
       </head>
       <body className={`${poppins.variable} ${instrumentSerif.variable} antialiased`}>{children}</body>
     </html>
