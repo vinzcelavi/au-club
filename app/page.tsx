@@ -13,8 +13,11 @@ const HomePage = () => {
         <AlbumHero />
       </main>
 
-      <div className="fixed bottom-4 left-4 right-4 text-center text-white/60 text-xs font-medium">
-        Ouvert 7j/7 • Avenue de la Biste, 34670 Baillargues
+      <div className="z-20 fixed bottom-4 left-4 right-4 text-center text-white/60 text-xs font-medium">
+        Ouvert 7j/7 •{' '}
+        <a href="https://maps.app.goo.gl/bFaDMbYScBVgsuJ98" target="_blank" rel="noreferrer">
+          Avenue de la Biste, 34670 Baillargues
+        </a>
       </div>
     </div>
   );
