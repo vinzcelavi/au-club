@@ -19,6 +19,7 @@
   --color-primary-darker: var(--primary-darker);
   --color-cream: var(--cream);
   --animate-background-gradient: background-gradient;
+  --animate-spin-slow: spin-slow 12s linear infinite;
 
   @keyframes background-gradient {
     0%, 100% {
@@ -37,6 +38,15 @@
     80% {
       transform: translate(calc(100% * var(--tx-4, -1)), calc(100% * var(--ty-4, -1)));
     }      
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
 
