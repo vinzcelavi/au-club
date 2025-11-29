@@ -37,7 +37,7 @@ const HomePage = () => {
           }}
         >
           <span className="font-normal">Web Design</span>{' '}
-          <Celavi className="w-auto h-4 animate-spin-slow inline-flex" /> Vincent Bianciotto
+          <Celavi className="w-auto h-4.5 animate-spin-slow inline-flex" /> Vincent Bianciotto
         </a>
       </div>
 
