@@ -15,7 +15,7 @@ const HomePage = () => {
         <AlbumHero />
       </main>
 
-      <div className="z-30 fixed right-2 md:right-3 bottom-6">
+      <div className="z-30 fixed right-4 md:right-3 bottom-6">
         <a
           href="https://celavi.fr"
           target="_blank"
