@@ -1,3 +1,4 @@
+import { MoveRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { GoogleReviewsSection } from './google-reviews-section';
 import { FlipWords } from './ui/flip-words';
@@ -45,7 +46,7 @@ const HeroSection = () => {
           'transition-ease duration-150'
         )}
       >
-        Réserver un court
+        Réserver un court <MoveRight className="w-5 h-5" />
       </a>
       <GoogleReviewsSection />
     </>

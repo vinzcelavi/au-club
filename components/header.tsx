@@ -9,9 +9,9 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="/" className="flex items-center">
             <Logo />
-          </div>
+          </a>
 
           {/* Contact Info & Social Links */}
           <div className="flex items-center gap-1 md:gap-2">
