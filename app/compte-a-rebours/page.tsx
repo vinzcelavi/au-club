@@ -22,7 +22,7 @@ const CountdownPage = () => {
           </h1>
           <AnimatedNumberCountdown endDate={new Date('2025-12-25')} className="my-4" />
           <a
-            href="https://share.google/F3SDjWVN8TDsWrEGB"
+            href="https://search.google.com/local/writereview?placeid=ChIJ7evTd0WhthIRImFgaQEtPz4"
             target="_blank"
             rel="noreferrer"
             className={cn(
