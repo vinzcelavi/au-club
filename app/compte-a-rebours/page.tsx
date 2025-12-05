@@ -10,7 +10,8 @@ const CountdownPage = () => {
     <main className="relative z-10">
       <div className="z-10 relative flex flex-col items-center justify-center w-dvw h-dvh overflow-hidden">
         <div className="flex flex-col items-center justify-center gap-4 px-8 md:px-0 max-w-lg w-full h-auto mx-auto text-center">
-          <h1 className="text-xl md:text-2xl font-semibold text-white tracking-tighter">
+          <Image src="/qr-code-min.png" alt="Google Favicon" width={100} height={100} className="block w-32 h-32" />
+          <h1 className="mt-8 max-w-sm mx-auto text-xl md:text-2xl font-semibold text-white tracking-tighter">
             100 avis Google pour{' '}
             <span
               className="italic font-normal tracking-tight text-cream"
